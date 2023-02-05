@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <span style="font-family: Courier, Monospace, monospace; font-size: 72px; text-align: center;" id="loadingtxt">L O A D</span>
+  <head>
+    <title>Clockwork, by Redstone Network</title>
+    <link rel="shortcut icon" type="image/png" href="clockwork-icon.png">
+    <link href="clockstyle.css" rel="stylesheet" type="text/css">
+  </head>
+  <body onload="startLoop()" style="display:none;">
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+
+    <div class="navbar" id="navbar">
+      <span id="extra" style="order: 99999;"></span>
+      <a href="javascript:openapp('notepad','https://lukasexists.netlify.app/notepad/index.html');">Notepad</a>
+      <a href="javascript:openapp('discord','https://clockwork-apps.glitch.me/service/gateway?url=https://discord.com/app');">Discord</a>
+      <a href="javascript:openapp('twitter','https://clockwork-apps.glitch.me/service/gateway?url=https://twitter.com/');">Twitter</a>
+      <a href="javascript:openapp('games','text here i guess');">Games</a>
+      <a href="javascript:openapp('appstore','the app store is a huge wip!!!!!!!!');">App Store</a>
+      <a href="javascript:openapp('settings','if youre reading this youre gay');">Settings</a>
+      <a href="javascript:openapp('about','gay sex');">About</a>
+    </div>
+
+    <div class="main" id="main">
+      <div id="welcome">
+        <span style="font-family: Courier, Monospace, monospace;">
+          <b>WELCOME TO CLOCKWORK, BY REDSTONE NETWORK</b>
+          <br>
+          Clockwork is like a mini OS in your browser. It has unblocked games, apps, and tools!
+          <br><br>
+          If you ever need help, remember that there's a wiki for Clockwork:<br>
+          <a class="consolea" href="https://github.com/red-stone-network/clockwork/wiki/User-Tutorials">https://github.com/red-stone-network/clockwork/wiki/User-Tutorials</a>
+          <br><br>
+          If you want to learn how to get your own app working, there's a wiki for that too:<br>
+          <a class="consolea" href="https://github.com/red-stone-network/clockwork/wiki/Dev-Tutorials">https://github.com/red-stone-network/clockwork/wiki/Dev-Tutorials</a>
+          <br><br>
+          Thanks for using Clockwork! :)
+        </span>
+      </div>
+      <iframe style="display: none;" class="app" id="notepad" src="about:blank"></iframe>
+      <iframe style="display: none;" class="app" id="discord" src="about:blank"></iframe>
+      <iframe style="display: none;" class="app" id="twitter" src="about:blank"></iframe>
+      <iframe style="display: none;" class="app" id="game" src="about:blank"></iframe>
+      <embed style="display: none;" class="app" id="flashgame" src="about:blank"></embed>
+      <div style="display: none;" id="appstore">
+        <span style="font-family: Courier, Monospace, monospace;">
+          <b>APP STORE - Download apps!</b><br><br>
+          <b style="color: blue;">Protohub</b> - <a class="consolea" href="javascript:installApp('https://sub64.netlify.app/clockwork-beta/protohub.js');">[INSTALL]</a> - <a class="consolea" href="https://sub64.netlify.app/clockwork-beta/protohub.js">[SOURCE]</a><br>
+          <br>
+          <a class="consolea" href="javascript:installApp(null);">[INSTALL CUSTOM APP]</a><br>
+        </span>
+      </div>
+      <div style="display: none;" id="games">
+        <span style="font-family: Courier, Monospace, monospace;">
+          <b>GAMES MENU</b><br><br>
+          <a class="consolea" href="javascript:openapp('game','https://moyaimoment.github.io/test/idle-breakout/');">Idle Breakout</a><br>
+          <a class="consolea" href="javascript:openapp('game','https://moyaimoment.github.io/cell-machine/');">Cell Machine</a><br>
+          <a class="consolea" href="javascript:openapp('game','https://moyaimoment.github.io/games/retro-bowl/');">Retro Bowl</a><br>
+          <a class="consolea" href="javascript:openapp('game','https://moyaimoment.github.io/games/social-disconnect/');">Social Disconnect</a><br>
+          <a class="consolea" href="javascript:openapp('flashgame','https://moyaimoment.github.io/flash/n/n.swf');">N</a><br>
+          <a class="consolea" href="javascript:openapp('flashgame','https://moyaimoment.github.io/flash/ducklife/ducklife.swf');">Duck Life</a><br>
+          <a class="consolea" href="javascript:openapp('flashgame','https://moyaimoment.github.io/flash/papaspizzeria/papaspizzeria.swf');">Papa's Pizzeria</a><br>
+        </span>
+      </div>
+      <div style="display: none;" id="settings">
+        <span style="font-family: Courier, Monospace, monospace;">
+          <b>SETTINGS</b><br>
+          <a class="consolea" href="javascript:addTheme(null);">Add Theme</a> - <a class="consolea" href="javascript:addTheme('clockstyle.css');">Remove Theme</a><br>
+          <a class="consolea" href="javascript:factoryReset();">Factory Reset</a><br>
+          more coming soon :p
+        </span>
+      </div>
+      <div style="display: none;" id="about">
+        <span style="font-family: Courier, Monospace, monospace;">
+          <b>ABOUT CLOCKWORK</b><br>
+          Version 0.7.0<br>
+          Latest update: Fixed up the scrollbars, added new apps<br>
+          <a class="consolea" href="https://github.com/red-stone-network/clockwork/">Github Repository</a> - <a class="consolea" href="https://redstone-nw.netlify.app/index.html">Redstone Network</a>
+        </span>
+      </div>
+    </div>
+    
+    <script src="clockwork.js"></script>
+  </body>
+</html>
