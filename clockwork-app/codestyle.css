@@ -5,7 +5,7 @@ html {
 body {
   margin: 0;
   background-color: black;
-  color: whitesmoke;
+  color: white;
   font-family: Courier, Monospace, monospace;
 }
 
@@ -71,4 +71,8 @@ body {
 .iconbtn {
   width: 4px;
   text-indent: -4px;
+}
+
+.material-symbols-outlined {
+  color: white !important;
 }
