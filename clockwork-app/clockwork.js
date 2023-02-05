@@ -102,14 +102,13 @@ function addTheme(ss) {
   } else {
     ss2 = ss;
   }
-  var head = document.head;
   var link = document.createElement("link");
 
   link.type = "text/css";
   link.rel = "stylesheet";
   link.href = ss2;
 
-  head.appendChild(link);
+  document.body.appendChild(link);
   
   var theme = ss2;
   localStorage.setItem("theme", theme);
