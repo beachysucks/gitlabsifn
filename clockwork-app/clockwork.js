@@ -57,6 +57,14 @@ function openapp(appname, appurl) {
       appname.src = appurl;
       document.getElementById("main").appendChild(appname);
     }
+    if (appname.id == "game") {
+      appname.remove();
+      var appname = document.createElement("iframe");
+      appname.id = "game";
+      appname.class = "app";
+      appname.src = appurl;
+      document.getElementById("main").appendChild(appname);
+    }
 
     appname.style = "display: block;";
   } else {
