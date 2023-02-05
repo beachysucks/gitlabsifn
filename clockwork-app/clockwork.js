@@ -72,6 +72,7 @@ function addApp(scr) {
 }
 
 function installApp(appscript) {
+  openapp('appstoreinstalling','mongus');
   if (appscript == null) {
     var appscript = prompt("Enter the URL of your custom script.");
   }
@@ -83,6 +84,7 @@ function installApp(appscript) {
     localStorage.setItem("apps", JSON.stringify(apps));
     console.log(apps);
   }
+  openapp('appstore','mongus');
 }
 
 function addTheme(ss) {
