@@ -3,7 +3,7 @@ if (theme != null) {
   addTheme(theme);
 }
 
-var apps = JSON.parse(localStorage.getItem("apps"));
+apps = JSON.parse(localStorage.getItem("apps"));
 console.log(apps);
 if (apps == null) {
   localStorage.setItem("apps", JSON.stringify(new Array()));
@@ -33,8 +33,8 @@ function uninstallApp(unid, del) {
       del[i].remove();
     }
   }
-  var apps = JSON.parse(localStorage.getItem("apps"));
-  alert(apps);
+  apps = JSON.parse(localStorage.getItem("apps"));
+  console.log(apps);
 }
 
 function openapp(appname, appurl) {
