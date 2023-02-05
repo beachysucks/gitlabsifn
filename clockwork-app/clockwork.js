@@ -38,10 +38,6 @@ function uninstallApp(unid, del) {
 }
 
 function openapp(appname, appurl) {
-  var welcome = document.getElementById('welcome');
-  if (welcome != null) {
-    welcome.remove();
-  } 
   var main = document.getElementById('main');
   for (const child of main.children) {
     child.style = "display: none;";

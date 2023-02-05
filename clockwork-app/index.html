@@ -5,12 +5,25 @@
     <title>Clockwork, by Redstone Network</title>
     <link rel="shortcut icon" type="image/png" href="clockwork-icon.png">
     <link href="clockstyle.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 40
+      }
+    </style>
   </head>
   <body onload="startLoop()" style="display:none;">
     <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 
     <div class="navbar" id="navbar">
       <span id="extra" style="order: 99999;"></span>
+      <a href="javascript:openapp('home','');"><span class="material-symbols-outlined">
+        home
+        </span></a>
       <a href="javascript:openapp('notepad','https://lukasexists.netlify.app/notepad/index.html');">Notepad</a>
       <a href="javascript:openapp('discord','https://clockwork-apps.glitch.me/service/gateway?url=https://discord.com/app');">Discord</a>
       <a href="javascript:openapp('twitter','https://clockwork-apps.glitch.me/service/gateway?url=https://twitter.com/');">Twitter</a>
@@ -21,7 +34,7 @@
     </div>
 
     <div class="main" id="main">
-      <div id="welcome">
+      <div id="home">
         <span style="font-family: Courier, Monospace, monospace;">
           <b>WELCOME TO CLOCKWORK, BY REDSTONE NETWORK</b>
           <br>
