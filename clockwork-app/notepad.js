@@ -17,8 +17,10 @@ ExampleIFrame.src = "about:blank";
 
 ExampleLink.href = "javascript:openapp('"+ ExampleIFrame.id +"','" + link + "');" ;
 ExampleLink.innerHTML = title; 
+ExampleLink.id = id;
+ExampleLink.uninstallId = uninstallId;
 ExampleLink.addEventListener('dblclick', (e) => {
-  uninstallApp(uninstallId, [ExampleLink,ExampleIFrame]);
+  uninstallApp(ExampleLink.uninstallId, [ExampleLink,ExampleIFrame]);
 });
 
 document.getElementById("navbar").appendChild(ExampleLink);
