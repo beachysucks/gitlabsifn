@@ -20,7 +20,7 @@ ExampleLink.innerHTML = title;
 ExampleLink.uninstallId = uninstallId;
 ExampleLink.className = id; 
 ExampleLink.addEventListener('dblclick', (e) => {
-  uninstallApp(uninstallId, id);
+  uninstallApp(ExampleLink.uninstallId, ExampleLink.className);
 });
 
 document.getElementById("navbar").appendChild(ExampleLink);
