@@ -62,6 +62,7 @@ function openapp(appname, appurl) {
       var appname = document.createElement("iframe");
       appname.id = "game";
       appname.class = "app";
+      appname.style = "width: 100%; height: calc(100vh - 36px); border: none;";
       appname.src = appurl;
       document.getElementById("main").appendChild(appname);
     }
