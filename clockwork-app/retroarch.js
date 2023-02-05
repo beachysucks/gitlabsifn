@@ -13,6 +13,7 @@ var ExampleIFrame = document.createElement("iframe");
 ExampleIFrame.style = "display: none;";
 ExampleIFrame.className = "app";
 ExampleIFrame.class = id; 
+ExampleIFrame.id = id;
 ExampleIFrame.src = "about:blank";
 
 ExampleLink.href = "javascript:openapp('"+ ExampleIFrame.id +"','" + link + "');" ;
