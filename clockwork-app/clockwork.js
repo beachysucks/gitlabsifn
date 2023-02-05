@@ -98,18 +98,18 @@ function installApp(appscript) {
 
 function addTheme(ss) {
   if (ss == null) {
-    var ss = prompt("Enter the link to the stylesheet.css file.");
+    ss2 = prompt("Enter the link to the stylesheet.css file.");
   }
   var head = document.head;
   var link = document.createElement("link");
 
   link.type = "text/css";
   link.rel = "stylesheet";
-  link.href = ss;
+  link.href = ss2;
 
   head.appendChild(link);
   
-  var theme = ss;
+  var theme = ss2;
   localStorage.setItem("theme", theme);
 }
 
