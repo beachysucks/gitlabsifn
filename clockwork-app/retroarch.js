@@ -12,14 +12,15 @@ var ExampleIFrame = document.createElement("iframe");
 
 ExampleIFrame.style = "display: none;";
 ExampleIFrame.className = "app";
-ExampleIFrame.id = id; 
+ExampleIFrame.class = id; 
 ExampleIFrame.src = "about:blank";
 
 ExampleLink.href = "javascript:openapp('"+ ExampleIFrame.id +"','" + link + "');" ;
 ExampleLink.innerHTML = title; 
 ExampleLink.uninstallId = uninstallId;
+ExampleIFrame.class = id; 
 ExampleLink.addEventListener('dblclick', (e) => {
-  uninstallApp(ExampleLink.uninstallId, [ExampleLink,ExampleIFrame]);
+  uninstallApp(uninstallId, id);
 });
 
 document.getElementById("navbar").appendChild(ExampleLink);

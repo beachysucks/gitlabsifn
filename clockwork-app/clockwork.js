@@ -28,9 +28,10 @@ function uninstallApp(unid, del) {
     localStorage.setItem("apps", JSON.stringify(filtered));
     var apps = filtered;
 
-    var arrayLength = del.length;
+    var paras = document.getElementsByClassName(del);
+    var arrayLength = paras.length;
     for (var i = 0; i < arrayLength; i++) {
-      del[i].remove();
+      paras[i].remove();
     }
   }
   apps = JSON.parse(localStorage.getItem("apps"));
