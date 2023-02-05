@@ -114,6 +114,8 @@ function startLoop() {
   m = checkTime(m);
   s = checkTime(s);
   document.getElementById('extra').innerHTML =  h + ":" + m + ":" + s;
+
+  apps = JSON.parse(localStorage.getItem("apps"));
   
   setTimeout(startLoop, 500);
 }
