@@ -2,10 +2,10 @@ function start() {
 
   ////CONFIG////
 
-  var link = "https://lukasexists.netlify.app/notepad/index.html"; // link to app webpage
-  var id = "Notepad-CW-IFrame"; // a UNIQUE id to identify the frame for your app
-  var title = "Notepad"; // title shown in navbar
-  var uninstallId = "https://redstone-nw.netlify.app/clockwork-app/notepad.js"; // set this to the url location of your script
+  var link = "https://protohub.online/"; // link to app webpage
+  var id = "Protohub-CW-IFrame"; // a UNIQUE id to identify the frame for your app
+  var title = "Protohub"; // title shown in navbar
+  var uninstallId = "https://redstone-nw.netlify.app/clockwork-app/protohub.js"; // set this to the url location of your script
   
   ////SCRIPT////
   
