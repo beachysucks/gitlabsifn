@@ -1,9 +1,9 @@
 ////CONFIG////
 
-var link = "https://web.libretro.com/"; // link to app webpage
-var id = "Retroarch-CW-IFrame"; // a UNIQUE id to identify the frame for your app
-var title = "RetroArch"; // title shown in navbar
-var uninstallId = "https://redstone-nw.netlify.app/clockwork-app/retroarch.js"; // set this to the url location of your script
+var link = "https://protohub.online/"; // link to app webpage
+var id = "Protohub-CW-IFrame"; // a UNIQUE id to identify the frame for your app
+var title = "Protohub"; // title shown in navbar
+var uninstallId = "https://redstone-nw.netlify.app/clockwork-app/protohub.js"; // set this to the url location of your script
 
 ////SCRIPT////
 
