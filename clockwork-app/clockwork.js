@@ -53,7 +53,7 @@ function openapp(appname, appurl) {
       appname.remove();
       var appname = document.createElement("embed");
       appname.id = "flashgame";
-      appname.class = "app";
+      appname.className = "app";
       appname.src = appurl;
       document.getElementById("main").appendChild(appname);
     }
@@ -61,7 +61,7 @@ function openapp(appname, appurl) {
       appname.remove();
       var appname = document.createElement("iframe");
       appname.id = "game";
-      appname.class = "app";
+      appname.className = "app";
       appname.style = "width: 100%; height: calc(100vh - 36px); border: none;";
       appname.src = appurl;
       document.getElementById("main").appendChild(appname);
