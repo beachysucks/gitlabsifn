@@ -31,7 +31,7 @@ body {
   background-color: #300;
   color: white;
   text-decoration: none;
-  padding: 1px 4px;
+  padding: 0 4px;
   margin-right: 6px;
   margin-top: 2px;
   margin-bottom: 2px;
@@ -45,7 +45,7 @@ body {
   margin-right: 6px;
   height: 34px;
   white-space: nowrap;
-  display: inline-block;
+  display: inline;
 }
 
 .navbar a:hover {
@@ -68,5 +68,6 @@ body {
 }
 
 .iconbtn {
-  width: 24px;
+  width: 4px;
+  text-indent: -4px;
 }
