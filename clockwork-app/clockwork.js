@@ -33,7 +33,7 @@ function uninstallApp(unid, del) {
       del[i].remove();
     }
   }
-  var apps = JSON.parse(localStorage.getItem("apps"));
+  apps = JSON.parse(localStorage.getItem("apps"));
 }
 
 function openapp(appname, appurl) {
