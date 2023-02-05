@@ -99,6 +99,8 @@ function installApp(appscript) {
 function addTheme(ss) {
   if (ss == null) {
     ss2 = prompt("Enter the link to the stylesheet.css file.");
+  } else {
+    ss2 = ss;
   }
   var head = document.head;
   var link = document.createElement("link");
