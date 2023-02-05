@@ -1,8 +1,8 @@
 ////CONFIG////
 
-var link = "https://lukasexists.netlify.app/notepad/index.html"; // link to app webpage
-var id = "Notepad-CW-IFrame"; // a UNIQUE id to identify the frame for your app
-var title = "Notepad"; // title shown in navbar
+var link = "https://web.libretro.com/"; // link to app webpage
+var id = "Retroarch2-CW-IFrame"; // a UNIQUE id to identify the frame for your app
+var title = "RetroArch2"; // title shown in navbar
 var uninstallId = "https://redstone-nw.netlify.app/clockwork-app/notepad.js"; // set this to the url location of your script
 
 ////SCRIPT////
