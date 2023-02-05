@@ -11,15 +11,14 @@ var ExampleLink = document.createElement("a");
 var ExampleIFrame = document.createElement("iframe");
 
 ExampleIFrame.style = "display: none;";
-ExampleIFrame.className = "app";
-ExampleIFrame.class = id; 
+ExampleIFrame.className = "app "+id;
 ExampleIFrame.id = id;
 ExampleIFrame.src = "about:blank";
 
 ExampleLink.href = "javascript:openapp('"+ ExampleIFrame.id +"','" + link + "');" ;
 ExampleLink.innerHTML = title; 
 ExampleLink.uninstallId = uninstallId;
-ExampleIFrame.class = id; 
+ExampleIFrame.className = id; 
 ExampleLink.addEventListener('dblclick', (e) => {
   uninstallApp(uninstallId, id);
 });
