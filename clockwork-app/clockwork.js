@@ -102,6 +102,9 @@ function addTheme(ss) {
   } else {
     ss2 = ss;
   }
+  document.querySelectorAll('style,link[rel="stylesheet"]')
+  .forEach(element => element.remove());
+
   var link = document.createElement("link");
 
   link.type = "text/css";
