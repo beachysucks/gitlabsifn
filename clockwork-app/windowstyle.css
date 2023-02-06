@@ -6,7 +6,8 @@ html {
 
 body {
   margin: 0;
-  background-color: black;
+  background-image: url(https://redstone-nw.netlify.app/clockwork-app/win10.jpg);
+  background-size: cover;
   color: whitesmoke;
   font-family: Roboto, Arial, sans-serif;
 }
@@ -41,7 +42,7 @@ body {
 
 .navbar a {
   background-color: rgba(0,0,0,0);
-  color: black;
+  color: white;
   text-decoration: none;
   padding: 1px 4px;
   margin-right: 6px;
