@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 html {
-  background-color: black;
+  background-color: rgba(0,0,0,0);
 }
 
 body {
@@ -77,5 +77,5 @@ body {
 }
 
 .material-symbols-outlined {
-  color: black !important;
+  color: white !important;
 }
