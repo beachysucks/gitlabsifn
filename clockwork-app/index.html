@@ -43,7 +43,7 @@
 
     <div class="main" id="main">
       <div id="home">
-        <span style="font-family: Courier, Monospace, monospace;">
+        <span class="confont">
           <b>WELCOME TO CLOCKWORK, BY REDSTONE NETWORK</b>
           <br>
           Clockwork is like a mini OS in your browser. It has unblocked games, apps, and tools!
@@ -63,7 +63,7 @@
       <iframe style="display: none;" class="app" id="game" src="about:blank"></iframe>
       <embed style="display: none;" class="app" id="flashgame" src="about:blank"></embed>
       <div style="display: none;" id="appstore">
-        <div style="font-family: Courier, Monospace, monospace;display:inline;width:50%;float:left;">
+        <div class="confont" style="display:inline;width:50%;float:left;">
           <b>APP STORE</b><br><br>
           <b style="color: blue;">Protohub</b> - <a class="consolea" href="javascript:installApp('https://redstone-nw.netlify.app/clockwork-app/protohub.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/protohub.js">[SOURCE]</a><br>
           <b>RetroArch</b> - <a class="consolea" href="javascript:installApp('https://redstone-nw.netlify.app/clockwork-app/retroarch.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/retroarch.js">[SOURCE]</a><br>
@@ -72,7 +72,7 @@
           <br>
           <a class="consolea" href="javascript:installApp(null);">[INSTALL CUSTOM SCRIPT]</a><br>
         </div>
-        <div style="font-family: Courier, Monospace, monospace;display:inline;width:50%;float:left;">
+        <div class="confont" style="display:inline;width:50%;float:left;">
           <b>THEME STORE</b><br><br>
           You can only have one theme installed at a time.<br>
           <b style="color: white;">codestyle.css</b> - <a class="consolea" href="javascript:addTheme('https://redstone-nw.netlify.app/clockwork-app/codestyle.css');">[INSTALL]</a><br>
@@ -84,12 +84,12 @@
         </div>
       </div>
       <div style="display: none;" id="appstoreinstalling">
-        <span style="font-family: Courier, Monospace, monospace;">
+        <span class="confont">
           <b id="installinglooper">INSTALLING...</b>
         </span>
       </div>
       <div style="display: none;" id="games">
-        <span style="font-family: Courier, Monospace, monospace;">
+        <span class="confont">
           <b>GAMES MENU</b><br><br>
           <a class="consolea" href="javascript:openapp('game','https://moyaimoment.github.io/test/idle-breakout/');">Idle Breakout</a><br>
           <a class="consolea" href="javascript:openapp('game','https://moyaimoment.github.io/cell-machine/');">Cell Machine</a><br>
@@ -104,7 +104,7 @@
         </span>
       </div>
       <div style="display: none;" id="settings">
-        <span style="font-family: Courier, Monospace, monospace;">
+        <span class="confont">
           <b>SETTINGS</b><br>
           <a class="consolea" href="javascript:addTheme(null);">Add Theme</a> - <a class="consolea" href="javascript:addTheme('clockstyle.css');">Remove Theme</a><br>
           <a class="consolea" href="javascript:factoryReset();">Factory Reset</a><br>
@@ -112,7 +112,7 @@
         </span>
       </div>
       <div style="display: none;" id="about">
-        <span style="font-family: Courier, Monospace, monospace;">
+        <span class="confont">
           <b>ABOUT CLOCKWORK</b><Br>                                                                                               
           Version 0.9.0<br>
           <a class="consolea" href="https://github.com/red-stone-network/clockwork/">Github Repository</a> - <a class="consolea" href="https://redstone-nw.netlify.app/index.html">Redstone Network</a>

@@ -77,3 +77,7 @@ body {
 .material-symbols-outlined {
   color: black !important;
 }
+
+.confont {
+  font-family: Courier, Monospace, monospace;
+}
