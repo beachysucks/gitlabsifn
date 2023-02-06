@@ -95,6 +95,11 @@ function installApp(appscript) {
   }
   openapp('appstore','mongus');
 }
+function sschk(element) {
+  if (element.className != "donotremove-ss") {
+    element.remove();
+  }
+}
 
 function addTheme(ss) {
   if (ss == null) {
@@ -103,7 +108,7 @@ function addTheme(ss) {
     ss2 = ss;
   }
   document.querySelectorAll('style,link[rel="stylesheet"]')
-  .forEach(element => element.remove());
+  .forEach(element => sschk(element));
 
   var link = document.createElement("link");
 
