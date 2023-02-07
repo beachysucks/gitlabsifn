@@ -19,8 +19,8 @@ body {
 
 .navbar {
   overflow-y: scroll;
-  background-color: rgba(0,0,0,.5);
-  backdrop-filter: blur(18px);
+  background-color: rgba(0,0,0,.7);
+  backdrop-filter: blur(9px);
   position: fixed;
   bottom: 0;
   width: 100%;
