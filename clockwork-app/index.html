@@ -86,11 +86,13 @@
           <a class="consolea" href="javascript:addTheme('clockstyle.css');">[RESET TO DEFAULT]</a><br>
         </div>
       </div>
+
       <div style="display: none;" id="appstoreinstalling">
         <span class="confont">
           <b id="installinglooper">INSTALLING...</b>
         </span>
       </div>
+
       <div style="display: none;" id="games">
         <span class="confont">
           <b>GAMES MENU</b><br><br>
@@ -107,18 +109,27 @@
           <a class="consolea" href="javascript:openapp('flashgame','https://yexex.github.io/bloonstd2.swf');">Bloons Tower Defense 2</a><br>
         </span>
       </div>
+
+      <div style="display: none;" id="settings">
+        <span class="confont">
+          <b>MANAGE APPS - <a class="consolea" href="javascript:openapp('settings','');">BACK</a></b><br>
+          <span class="confont" id="applist"></span>
+        </span>
+      </div>
+      
       <div style="display: none;" id="settings">
         <span class="confont">
           <b>SETTINGS</b><br>
-          <a class="consolea" href="javascript:addTheme(null);">Add Theme</a> - <a class="consolea" href="javascript:addTheme('clockstyle.css');">Remove Theme</a><br>
+          <a class="consolea" href="javascript:openapp('settings-apps','');">Manage Apps</a><br>
           <a class="consolea" href="javascript:factoryReset();">Factory Reset</a><br>
-          more coming soon :p
+          new settings menu is a work in progress
         </span>
       </div>
+
       <div style="display: none;" id="about">
         <span class="confont">
-          <b>ABOUT CLOCKWORK</b><Br>                                                                                               
-          Version 0.10.2<br>
+          <b>ABOUT CLOCKWORK<b><br>        
+          Version beta-0.11.0<br>
           <a class="consolea" href="https://github.com/red-stone-network/clockwork/">Github Repository</a> - <a class="consolea" href="https://redstone-nw.netlify.app/index.html">Redstone Network</a>
         </span>
       </div>
