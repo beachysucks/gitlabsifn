@@ -164,9 +164,9 @@ setTimeout(unhide, 1500);
 function showMenu() {
   e.preventDefault();
 
-  if (document.getElementById("contextMenu").style.display == "block")
-    hideMenu()
-  else {
+  if (document.getElementById("contextMenu").style.display == "block") {
+    hideMenu();
+  } else {
     document.getElementById("unins-cm").href = "javascript:alert('"+v.className+"');";
     var menu = document.getElementById("contextMenu");
 
