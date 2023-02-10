@@ -23,6 +23,7 @@ function start() {
     uninstallApp(ExampleIFrame.id);
   });
   ExampleLink.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
     closeApp(ExampleIFrame.id);
   });
   
