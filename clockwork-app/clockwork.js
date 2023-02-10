@@ -83,21 +83,6 @@ function addApp(scr) {
   aelem.innerHTML = scr + "<br>";
   aelem.className = "consolea " + scr;
   document.getElementById("applist").appendChild(aelem);
-
-  v.addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-
-    if (document.getElementById("contextMenu").style.display == "block")
-      hideMenu()
-    else {
-      document.getElementById("unins-cm").href = "javascript:alert('"+v.className+"');";
-      var menu = document.getElementById("contextMenu");
-
-      menu.style.display = 'block';
-      menu.style.left = e.pageX + "px";
-      menu.style.top = e.pageY + "px";
-    }
-  });
 }
 
 function installApp(appscript) {
