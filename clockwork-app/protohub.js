@@ -22,7 +22,7 @@ function start() {
   ExampleLink.addEventListener('dblclick', (e) => {
     uninstallApp(ExampleIFrame.id);
   });
-  ExampleLink.addEventListener("contextmenu", showMenu);
+  ExampleLink.oncontextmenu = showMenu;
   
   document.getElementById("navbar").appendChild(ExampleLink);
   document.getElementById("main").appendChild(ExampleIFrame);
