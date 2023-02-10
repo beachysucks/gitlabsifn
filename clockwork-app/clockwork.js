@@ -81,7 +81,7 @@ function addApp(scr) {
   var aelem = document.createElement("a");
   aelem.href = "javascript:uninstallApp('"+scr+"');";
   aelem.innerHTML = scr + "<br>";
-  aelem.class = "consolea " + scr;
+  aelem.className = "consolea " + scr;
   document.getElementById("applist").appendChild(aelem);
 }
 
