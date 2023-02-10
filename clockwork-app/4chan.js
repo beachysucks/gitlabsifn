@@ -3,10 +3,9 @@ function start() {
   ////CONFIG////
 
   var link = "https://clockwork-apps.glitch.me/service/gateway?url=https://www.4chan.org/"; // link to app webpage
-  var id = "4chan-CW-IFrame"; // a UNIQUE id to identify the frame for your app
   var title = "4chan"; // title shown in navbar
-  var uninstallId = "https://redstone-nw.netlify.app/clockwork-app/4chan.js"; // set this to the url location of your script
-  
+  var id = "https://redstone-nw.netlify.app/clockwork-app/4chan.js"; // set this to the url location of your script
+
   ////SCRIPT////
   
   var ExampleLink = document.createElement("a");
@@ -19,10 +18,9 @@ function start() {
   
   ExampleLink.href = "javascript:openapp('"+ ExampleIFrame.id +"','" + link + "');" ;
   ExampleLink.innerHTML = title; 
-  ExampleLink.uninstallId = uninstallId;
   ExampleLink.className = id; 
   ExampleLink.addEventListener('dblclick', (e) => {
-    uninstallApp(ExampleLink.uninstallId, ExampleLink.className);
+    uninstallApp(ExampleIFrame.id);
   });
   
   document.getElementById("navbar").appendChild(ExampleLink);
