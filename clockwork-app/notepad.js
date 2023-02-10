@@ -22,6 +22,10 @@ function start() {
   ExampleLink.addEventListener('dblclick', (e) => {
     uninstallApp(ExampleIFrame.id);
   });
+  ExampleLink.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    closeApp(ExampleIFrame.id);
+  });
   
   document.getElementById("navbar").appendChild(ExampleLink);
   document.getElementById("main").appendChild(ExampleIFrame);

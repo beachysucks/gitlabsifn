@@ -2,9 +2,9 @@ function start() {
 
   ////CONFIG////
 
-  var link = "https://web.libretro.com/"; // link to app webpage
-  var title = "RetroArch"; // title shown in navbar
-  var id = "https://redstone-nw.netlify.app/clockwork-app/retroarch.js"; // set this to the url location of your script
+  var link = "https://chatter-typical-honeysuckle.glitch.me/service/hvtrs8%2F-tuivtgr%2Ccmm"; // link to app webpage
+  var title = "Twitter"; // title shown in navbar
+  var id = "https://redstone-nw.netlify.app/clockwork-app/twitter.js"; // set this to the url location of your script
   
   ////SCRIPT////
   
