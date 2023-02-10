@@ -19,7 +19,7 @@ function scrollbarVisible(element) {
   return element.scrollHeight > element.clientHeight;
 }
 
-function uninstallApp(unid, del) {
+function uninstallApp(unid, del, id) {
   var apps = JSON.parse(localStorage.getItem("apps"));
   if (confirm("Are you sure you want to delete this app? You'll lose all your saved data!") == true) {
     var filtered = apps.filter(function(value, index, arr){ 
@@ -31,6 +31,13 @@ function uninstallApp(unid, del) {
     var paras = document.getElementsByClassName(del);
     while(paras[0]) {
       paras[0].parentNode.removeChild(paras[0]);
+    }
+    if (id != null) {
+      const delClass = document.getElementsByClassName(id);
+
+      delClass.forEach(todel => {
+        todel.remove();
+      });
     }
   }
   apps = JSON.parse(localStorage.getItem("apps"));
