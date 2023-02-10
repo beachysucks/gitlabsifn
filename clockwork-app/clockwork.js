@@ -80,8 +80,9 @@ function addApp(scr) {
   document.body.appendChild(scriptelem);
   var aelem = document.createElement("a");
   aelem.href = "javascript:uninstallApp('"+scr+"');";
-  aelem.innerHTML = scr + "<br>"
-  document.getElementById("applist").appendChild(aelem)
+  aelem.innerHTML = scr + "<br>";
+  aelem.class = "consolea " + scr;
+  document.getElementById("applist").appendChild(aelem);
 }
 
 function installApp(appscript) {
