@@ -79,10 +79,9 @@ function addApp(scr) {
   scriptelem.src = scr;
   document.body.appendChild(scriptelem);
   var aelem = document.createElement("a");
-  aelem.href = "javascript:alert('This is an app');";
-  aelem.addEventListener('dblclick', (e) => {
-    uninstallApp(scr);
-  });
+  aelem.href = "javascript:uninstallApp('"+scr+"');";
+  aelem.innerHTML = scr + "<br>"
+  document.getElementById("applist").appendChild(aelem)
 }
 
 function installApp(appscript) {
