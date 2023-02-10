@@ -19,7 +19,7 @@ function scrollbarVisible(element) {
   return element.scrollHeight > element.clientHeight;
 }
 
-function uninstallApp(unid, del) {
+function uninstallApp(unid) {
   var apps = JSON.parse(localStorage.getItem("apps"));
   if (confirm("Are you sure you want to delete this app? You'll lose all your saved data!") == true) {
     var filtered = apps.filter(function(value, index, arr){ 
@@ -28,7 +28,7 @@ function uninstallApp(unid, del) {
     localStorage.setItem("apps", JSON.stringify(filtered));
     var apps = filtered;
 
-    var paras = document.getElementsByClassName(del);
+    var paras = document.getElementsByClassName(unid);
     while(paras[0]) {
       paras[0].parentNode.removeChild(paras[0]);
     }
@@ -78,6 +78,11 @@ function addApp(scr) {
   var scriptelem = document.createElement("script");
   scriptelem.src = scr;
   document.body.appendChild(scriptelem);
+  var aelem = document.createElement("a");
+  aelem.href = "javascript:alert('This is an app');";
+  aelem.addEventListener('dblclick', (e) => {
+    uninstallApp(scr);
+  });
 }
 
 function installApp(appscript) {
