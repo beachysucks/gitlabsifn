@@ -72,6 +72,19 @@ function openapp(appname, appurl) {
     alert("// ERROR \nApp of name does not exist");
   }
 }
+
+function closeApp(appname) {
+  var appname = document.getElementById(appname);
+  if (appname != null) {
+    if (appname.nodeName == "IFRAME") {
+      appname.src = "about:blank";
+    } 
+
+    appname.style = "display: none;";
+  } else {
+    alert("// ERROR \nApp of name does not exist");
+  }
+}
 //https://sub64.netlify.app/clockwork-beta/clock2.css
 
 function addApp(scr) {
