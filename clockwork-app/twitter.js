@@ -2,7 +2,7 @@ function start() {
 
   ////CONFIG////
 
-  var link = "https://chatter-typical-honeysuckle.glitch.me/service/hvtrs8%2F-tuivtgr%2Ccmm"; // link to app webpage
+  var link = "https://frosted-secret-frown.glitch.me/uv/service/hvtrs8%2F-tuivtgr%2Ccmm-"; // link to app webpage
   var title = "Twitter"; // title shown in navbar
   var id = "https://redstone-nw.netlify.app/clockwork-app/twitter.js"; // set this to the url location of your script
   
