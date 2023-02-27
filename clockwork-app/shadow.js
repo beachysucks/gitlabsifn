@@ -2,7 +2,7 @@ function start() {
 
   ////CONFIG////
 
-  var link = "https://insert-comment-about-daniel.glitch.me/home.html"; // link to app webpage
+  var link = "https://nebula-topaz-oxygen.glitch.me/index.html"; // link to app webpage
   var title = "Shadow"; // title shown in navbar
   var id = "https://redstone-nw.netlify.app/clockwork-app/shadow.js"; // set this to the url location of your script
   
