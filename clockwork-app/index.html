@@ -66,7 +66,8 @@
       <embed style="display: none;" class="app" id="flashgame" src="about:blank"></embed>
       <div style="display: none;" id="appstore">
         <div class="confont" style="display:inline;width:50%;float:left;">
-          <div class="divider"><b>App Store</b> - <a class="consolea" href="javascript:installApp(null);">[INSTALL CUSTOM APP]</a></div> 
+          <div class="divider"><b>App Store</b> - <a class="consolea" href="javascript:installApp(null);">[INSTALL CUSTOM APP]</a></div>
+          <div class="xscroll"> 
           <table>
             <td>
             <div id="app">
@@ -80,9 +81,23 @@
               <h3><a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/shadow.js">RetroArch</a></h3>
               </div>
               </td>
+              <td>
+                <div id="app">
+                <div id="chan" onclick="javascript:installApp('https://redstone-nw.netlify.app/clockwork-app/4chan.js');"></div>
+                <h3><a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/4chan.js">4Chan</a></h3>
+                </div>
+                </td>
+                <td>
+                  <div id="app">
+                  <div id="bitplanes" onclick="javascript:installApp('https://l413.github.io/Clockwork-OS-Custom/bitplanesapp.js');"></div>
+                  <h3><a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/bitplanesapp.js">Bit Planes</a></h3>
+                  </div>
+                  </td>
             </table>
+            </div>
             <div class="divider"><b>Theme Store</b> - <a class="consolea" href="javascript:addTheme(null);">[INSTALL CUSTOM THEME]</a> <a class="consolea" href="javascript:addTheme('clockstyle.css');">[RESET TO DEFAULT]</a> Only ONE theme can be installed at a time.</div> 
-          <table>
+            <div class="xscroll"> 
+            <table>
             <td>
             <div id="app">
             <div id="softpurple" onclick="javascript:addTheme('https://l413.github.io/Clockwork-OS-Custom/softpurpletheme.css');"></div>
@@ -102,6 +117,7 @@
                 </div>
                 </td>
             </table>
+            </div>
           <b style="color: white;">Shadow Proxy</b> - <a class="consolea" href="javascript:installApp('https://redstone-nw.netlify.app/clockwork-app/shadow.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/shadow.js">[SOURCE]</a><br>
           <b>RetroArch</b> - <a class="consolea" href="javascript:installApp('https://redstone-nw.netlify.app/clockwork-app/retroarch.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/retroarch.js">[SOURCE]</a><br>
           <b style="color: red;">Notepad</b> - <a class="consolea" href="javascript:installApp('https://redstone-nw.netlify.app/clockwork-app/notepad.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/notepad.js">[SOURCE]</a><br>

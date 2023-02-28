@@ -16,15 +16,17 @@ td {
   border-radius: 25px;          
   background-position: left top;
   background-repeat: repeat;
-  padding: 20px;       height: 150px;  
+  padding: 20px;       
+  height: 150px;  
   text-align: center;
   transition: 0.3s;
 }
 
 .divider {
-    background-color: darkgrey;
     padding: 10px;
+    background-color: grey;
     }
+
 /*App Images*/
 #shadowproxy {
     background: url(/assets/app-images/shadows-proxy.jpeg); 
@@ -53,6 +55,7 @@ td {
 #tffe {
     background: url(/assets/app-images/2048.png); 
 }
+
 /*Theme Images*/
 #softpurple {
     background: purple;

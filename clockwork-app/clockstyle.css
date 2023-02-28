@@ -84,3 +84,8 @@ body {
 .confont {
   font-family: Courier, Monospace, monospace;
 }
+
+div.xscroll {
+  overflow: auto;
+  white-space: nowrap;
+}
