@@ -24,8 +24,14 @@ td {
 
 .divider {
     padding: 10px;
-    background-color: grey;
+    background-color: lightgrey;
     }
+
+div.xscroll {
+    overflow: auto;
+    white-space: nowrap;
+    background-color: mintcream;
+    }    
 
 /*App Images*/
 #shadowproxy {
