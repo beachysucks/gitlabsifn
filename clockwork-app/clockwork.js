@@ -99,7 +99,6 @@ function addApp(scr) {
 }
 
 function installAppV2(source, script) {
-  alert("done");
   var conf;
   if (source.includes("clockwork-app-store.glitch.me") == false) {
      conf = confirm(`//// READ THIS MESSAGE!!!! ////
@@ -131,10 +130,10 @@ function installApp(appscript) {
   if (apps.includes(appscript) == true) {
     alert("App is already installed!");
   } else {
-    apps.push(appscript);
-    addApp(appscript);
-    localStorage.setItem("apps", JSON.stringify(apps));
-    console.log(apps);
+    console.warn("installApp() is deprecated! We've made it so it doesn't install apps forever for security reasons.\nPlease use installAppV2() instead")
+    if (confirm("This app is using outdated code - it may break at any time. Continue?") == true) {
+      addApp(appscript);
+    }
   }
   openapp('appstore','mongus');
 }
@@ -221,8 +220,6 @@ document.onclick = hideMenu;
 
 window.addEventListener('message', function(event) {
   if (event.data.length > 1) {
-    alert(event.data[0]);
-    alert(event.data[1]);
     if (event.data[0] == "install app") { //data.origin
       installAppV2(event.origin,event.data[1]);
     }
