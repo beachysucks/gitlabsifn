@@ -83,4 +83,5 @@ body {
 
 .confont {
   font-family: Courier, Monospace, monospace;
+  background-color: black !important;
 }
