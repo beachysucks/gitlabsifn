@@ -98,6 +98,29 @@ function addApp(scr) {
   document.getElementById("applist").appendChild(aelem);
 }
 
+function installAppV2(source, script) {
+  var conf;
+  if (source.includes("redstone-nw.netlify.app") == false) {
+     conf = confirm(`//// READ THIS MESSAGE!!!! ////
+An untrusted app is trying to install a script to Clockwork.
+PLEASE make sure that you trust the source of this app.
+
+Are you ABSOULTELY SURE you want to continue with installation?`);
+  } else {
+    conf = true;
+  }
+  if (conf == true) {
+    if (apps.includes(script) == true) {
+      alert("App is already installed!");
+    } else {
+      apps.push(script);
+      addApp(script);
+      localStorage.setItem("apps", JSON.stringify(apps));
+      console.log(apps);
+    }
+  }
+}
+
 function installApp(appscript) {
   openapp('appstoreinstalling','mongus');
   if (appscript == null) {
