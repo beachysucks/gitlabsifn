@@ -216,3 +216,11 @@ function hideMenu() {
   document.getElementById("contextMenu").style.display = "none";
 }
 document.onclick = hideMenu;
+
+window.addEventListener('message', function(event) {
+  if (event.data.length > 1) {
+    if (event.data[0] == "install app") {
+      installAppV2(data.origin,event.data[1]);
+    }
+  }
+});
