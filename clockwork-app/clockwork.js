@@ -101,7 +101,7 @@ function addApp(scr) {
 function installAppV2(source, script) {
   alert("done");
   var conf;
-  if (source.includes("redstone-nw.netlify.app") == false) {
+  if (source.includes("clockwork-app-store.glitch.me") == false) {
      conf = confirm(`//// READ THIS MESSAGE!!!! ////
 An untrusted app is trying to install a script to Clockwork. Apps can easily install malicious scripts if you aren't careful.
 
@@ -109,7 +109,7 @@ APP URL: `+script+`
 
 Are you ABSOULTELY SURE you want to continue with installation?`);
   } else {
-    conf = true;
+    conf = confirm(`Are you sure you want to install this app?`);
   }
   if (conf == true) {
     if (apps.includes(script) == true) {
