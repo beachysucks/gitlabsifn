@@ -218,6 +218,7 @@ function hideMenu() {
 document.onclick = hideMenu;
 
 window.addEventListener('message', function(event) {
+  alert(event.data[0]);
   if (event.data.length > 1) {
     if (event.data[0] == "install app") {
       installAppV2(data.origin,event.data[1]);
