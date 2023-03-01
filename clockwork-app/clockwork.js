@@ -103,8 +103,9 @@ function installAppV2(source, script) {
   var conf;
   if (source.includes("redstone-nw.netlify.app") == false) {
      conf = confirm(`//// READ THIS MESSAGE!!!! ////
-An untrusted app is trying to install a script to Clockwork.
-PLEASE make sure that you trust the source of this app.
+An untrusted app is trying to install a script to Clockwork. Apps can easily install malicious scripts if you aren't careful.
+
+URL:`+script+`
 
 Are you ABSOULTELY SURE you want to continue with installation?`);
   } else {
