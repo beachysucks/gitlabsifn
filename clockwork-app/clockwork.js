@@ -222,8 +222,8 @@ window.addEventListener('message', function(event) {
   if (event.data.length > 1) {
     alert(event.data[0]);
     alert(event.data[1]);
-    if (event.data[0] == "install app") {
-      installAppV2(data.origin,event.data[1]);
+    if (event.data[0] == "install app") { //data.origin
+      installAppV2('redstone-nw.netlify.app fake source lmao',event.data[1]);
     }
   }
 });
