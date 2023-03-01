@@ -43,7 +43,7 @@
     </div>
 
     <div class="main" id="main">
-      <div id="home">
+      <div id="home" class="app">
         <span class="confont">
           <b>WELCOME TO CLOCKWORK, BY REDSTONE NETWORK</b>
           <br>
@@ -67,7 +67,7 @@
       <embed style="display: none;" class="app" id="flashgame" src="about:blank"></embed>
       <iframe style="display: none;" class="app" id="appstore" src="about:blank"></iframe>
 
-      <div style="display: none;" id="games">
+      <div style="display: none;" class="app" id="games">
         <span class="confont">
           <b>GAMES MENU - some games may be broken, be patient and wait for more</b><br><br>
           <a class="consolea" href="javascript:openapp('game','https://antarttycoon.github.io/more/idle-breakout/index.html');">Idle Breakout</a><br>
@@ -82,14 +82,14 @@
         </span>
       </div>
 
-      <div style="display: none;" id="settings-apps">
+      <div style="display: none;" class="app" id="settings-apps">
         <span class="confont">
           <b>MANAGE APPS - <a class="consolea" href="javascript:openapp('settings','');">BACK</a></b><br>
           <span class="confont" id="applist"></span>
         </span>
       </div>
       
-      <div style="display: none;" id="settings">
+      <div style="display: none;" class="app" id="settings">
         <span class="confont">
           <b>SETTINGS</b><br>
           <a class="consolea" href="javascript:openapp('settings-apps','');">Manage Apps</a><br>
@@ -98,7 +98,7 @@
         </span>
       </div>
 
-      <div style="display: none;" id="settings-about">
+      <div style="display: none;" class="app" id="settings-about">
         <span class="confont">
           <b>ABOUT CLOCKWORK - <a class="consolea" href="javascript:openapp('settings','');">BACK</a></span></b><br>        
           Version beta-0.16.0<br>
