@@ -105,7 +105,7 @@ function installAppV2(source, script) {
      conf = confirm(`//// READ THIS MESSAGE!!!! ////
 An untrusted app is trying to install a script to Clockwork. Apps can easily install malicious scripts if you aren't careful.
 
-URL:`+script+`
+APP URL: `+script+`
 
 Are you ABSOULTELY SURE you want to continue with installation?`);
   } else {
