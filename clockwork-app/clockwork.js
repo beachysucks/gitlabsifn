@@ -99,6 +99,7 @@ function addApp(scr) {
 }
 
 function installAppV2(source, script) {
+  alert("done");
   var conf;
   if (source.includes("redstone-nw.netlify.app") == false) {
      conf = confirm(`//// READ THIS MESSAGE!!!! ////
@@ -218,8 +219,9 @@ function hideMenu() {
 document.onclick = hideMenu;
 
 window.addEventListener('message', function(event) {
-  alert(event.data[0]);
   if (event.data.length > 1) {
+    alert(event.data[0]);
+    alert(event.data[1]);
     if (event.data[0] == "install app") {
       installAppV2(data.origin,event.data[1]);
     }
