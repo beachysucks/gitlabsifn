@@ -6,6 +6,7 @@ td {
 #app {
   text-align: center;
   width: 200px;
+  cursor: pointer;
 }
 
 #rcorners:hover {
@@ -25,14 +26,26 @@ td {
 
 .divider {
     padding: 10px;
-    background-color: lightgrey;
+    background-color: #181818;
+    color: white;
     }
 
 div.xscroll {
     overflow: auto;
     white-space: nowrap;
-    background-color: mintcream;
-    }    
+    background-color: #282820;
+}
+  body {
+    background-color: #282820;
+  }
+  div#app > h3 > a {
+    color: white;
+  }
+  div.divider > button {
+    background-color: #282820;
+    cursor: pointer;
+    color: white;
+  }
 
 /*App Images*/
 #shadowproxy {
