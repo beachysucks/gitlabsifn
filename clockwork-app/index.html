@@ -4,8 +4,8 @@
   <head>
     <title>Clockwork, by Redstone Network</title>
     <link rel="shortcut icon" type="image/png" href="clockwork-icon.png">
-    <link href="clockstyle.css" rel="stylesheet" id="stylesheet" type="text/css">
-    <link href="appstyle.css" rel="stylesheet" id="stylesheet" type="text/css">
+    <link href="https://redstone-dev-site-buttche-eks.netlify.app/clockwork-app/clockstyle.css" rel="stylesheet" id="stylesheet" type="text/css">
+    <link href="https://redstone-dev-site-buttche-eks.netlify.app/clockwork-app/appstyle.css" rel="stylesheet" id="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" class="donotremove-ss"/>
   </head>
   <body onload="startLoop()" style="display:none;">
@@ -23,7 +23,7 @@
           settings
         </span>
       </a>
-      <a href="javascript:openapp('appstore','mongus');" class="iconbtn">
+      <a href="javascript:openapp('appstore','https://clockwork-app-store.glitch.me/');" class="iconbtn">
         <span class="material-symbols-outlined" style="vertical-align: middle; background-color: rgba(0, 0, 0, 0);color: black; font-size: 24px; width: 4px; text-indent: -4px;">
           shopping_bag
         </span>
@@ -33,8 +33,8 @@
           stadia_controller
         </span>
       </a>
-      <a href="javascript:openapp('muenster','https://muenster.glitch.me/app');" class="iconbtn" ondblclick="openapp('muenster','https://muenster-chat.glitch.me/');">
-        <span class="material-symbols-outlined" style="vertical-align: middle; background-color: rgba(0, 0, 0, 0);color: black; font-size: 24px; width: 4px; text-indent: -4px;">
+      <a href="javascript:openapp('muenster','https://muenster.glitch.me/app');" class="iconbtn">
+        <span class="material-symbols-outlined" style="vertical-align: middle; background-color: rgba(0, 0, 0, 0);color: black; font-size: 24px; width: 4px; text-indent: -4px; width: 10px;">
           chat
         </span>
       </a>
@@ -54,8 +54,7 @@
           If you want to learn how to get your own app working, there's a wiki for that too:<br>
           <a class="consolea" href="https://github.com/red-stone-network/clockwork/wiki/Dev-Tutorials">https://github.com/red-stone-network/clockwork/wiki/Dev-Tutorials</a>
           <br><br>
-          The new Muenster has now been added! You can still access the old Muenster by
-          double-clicking the button for it.
+          The latest update adds the new App Store! It's a work in progress, so it doesn't have all the features we want it to have, but it does have enough features to be a decent app store.
         </span>
       </div>
       <iframe style="display: none;" class="app" id="notepad" src="about:blank"></iframe>
@@ -64,130 +63,7 @@
       <iframe style="display: none;" class="app" id="twitter" src="about:blank"></iframe>
       <iframe style="display: none;" class="app" id="game" src="about:blank"></iframe>
       <embed style="display: none;" class="app" id="flashgame" src="about:blank"></embed>
-      <div style="display: none;" id="appstore">
-        <div class="confont" style="display:inline;width:50%;float:left;">
-          <div class="divider"><b>App Store</b> - <button class="consolea" onclick="javascript:installApp(null);">INSTALL CUSTOM APP</button></div>
-          <div class="xscroll"> 
-          <table>
-            <td>
-              <div id="app">
-              <div id="shadowproxy" onclick="javascript:installApp('https://redstone-nw.netlify.app/assets/apps/shadow.js');"></div>
-              <h3><a class="consolea" href="https://redstone-nw.netlify.app/assets/apps/shadow.js">Shadow Proxy</a></h3>
-              </div>
-            </td>
-            <td>
-              <div id="app">
-              <div id="retroarch" onclick="javascript:installApp('https://redstone-nw.netlify.app/assets/apps/retroarch.js');"></div>
-              <h3><a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/retroarch.js">RetroArch</a></h3>
-              </div>
-            </td>
-            <td>
-            <div id="app">
-              <div id="chan" onclick="javascript:installApp('https://redstone-nw.netlify.app/assets/apps/4chan.js');"></div>
-              <h3><a class="consolea" href="https://redstone-nw.netlify.app/assets/apps/4chan.js">4Chan</a></h3>
-              </div>
-            </td>
-            <td>
-              <div id="app">
-              <div id="bitplanes" onclick="javascript:installApp('https://redstone-nw.netlify.app/assets/apps/bitplanesapp.js');"></div>
-              <h3><a class="consolea" href="https://redstone-nw.netlify.app/assets/apps/bitplanesapp.js">Bit Planes</a></h3>
-              </div>
-            </td>
-            <td>
-              <div id="app">
-              <div id="tinyfishing" onclick="javascript:installApp('https://redstone-nw.netlify.app/assets/apps/tinyfishingapp.js');"></div>
-              <h3><a class="consolea" href="https://redstone-nw.netlify.app/assets/apps/tinyfishingapp.js">Tiny Fishing</a></h3>
-              </div>
-            </td>
-            <td>
-              <div id="app">
-              <div id="ttfe" onclick="javascript:installApp('https://redstone-nw.netlify.app/assets/apps/2048app.js');"></div>
-              <h3><a class="consolea" href="https://redstone-nw.netlify.app/assets/apps/2048app.js">2048</a></h3>
-              </div>
-            </td>
-            <td>
-              <div id="app">
-              <div id="basket-random" onclick="javascript:installApp('https://redstone-nw.netlify.app/assets/apps/basketrandomapp.js');"></div>
-              <h3><a class="consolea" href="https://redstone-nw.netlify.app/assets/apps/basketrandomapp.js">Basket Random</a></h3>
-              </div>
-            </td>
-            <td>
-              <div id="app">
-              <div id="paperio" onclick="javascript:installApp('https://redstone-nw.netlify.app/assets/apps/paperio2app.js');"></div>
-              <h3><a class="consolea" href="https://redstone-nw.netlify.app/assets/apps/paperio2app.js">Paper IO 2</a></h3>
-              </div>
-            </td>
-            <td>
-              <div id="app">
-              <div id="ma" onclick="javascript:installApp('https://redstone-nw.netlify.app/assets/apps/mandalinapp.js');"></div>
-              <h3><a class="consolea" href="https://redstone-nw.netlify.app/assets/apps/mandalinapp.js">Mandalin Stunt Cars</a></h3>
-              </div>
-            </td>
-          </table>
-            </div>
-            <div class="divider"><b>Theme Store</b> - <button class="consolea" onclick="javascript:addTheme(null);">INSTALL CUSTOM THEME</button> <button class="consolea" onclick="javascript:addTheme('clockstyle.css');">[RESET TO DEFAULT]</button> Only ONE theme can be installed at a time.</div> 
-            <div class="xscroll"> 
-          <table>
-            <td>
-              <div id="app">
-              <div id="softpurple" onclick="javascript:addTheme('https://redstone-nw.netlify.app/assets/themes/softpurpletheme.css');"></div>
-              <h3><a class="consolea" href="https://redstone-nw.netlify.app/assets/themes/softpurpletheme.css">Soft Purple</a></h3>
-              </div>
-            </td>
-            <td>
-              <div id="app">
-              <div id="monospace" onclick="javascript:addTheme('https://redstone-nw.netlify.app/assets/themes/codestyle.css');"></div>
-              <h3><a class="consolea" href="https://redstone-nw.netlify.app/assets/themes/codestyle.css">Monospace</a></h3>
-              </div>
-            </td>
-            <td>
-              <div id="app">
-              <div id="windows" onclick="javascript:addTheme('https://redstone-nw.netlify.app/assets/themes/windowstyle.css');"></div>
-              <h3><a class="consolea" href="https://redstone-nw.netlify.app/assets/themes/windowsstyle.css">Windows Knockoff</a></h3>
-              </div>
-            </td>
-          </table>
-        </div>
-          <b style="color: white;">Shadow Proxy</b> - <a class="consolea" href="javascript:installApp('https://redstone-nw.netlify.app/clockwork-app/shadow.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/shadow.js">[SOURCE]</a><br>
-          <b>RetroArch</b> - <a class="consolea" href="javascript:installApp('https://redstone-nw.netlify.app/clockwork-app/retroarch.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/retroarch.js">[SOURCE]</a><br>
-          <b style="color: red;">Notepad</b> - <a class="consolea" href="javascript:installApp('https://redstone-nw.netlify.app/clockwork-app/notepad.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/notepad.js">[SOURCE]</a><br>
-          <b style="color: #800;">4chan</b> - <a class="consolea" href="javascript:installApp('https://redstone-nw.netlify.app/clockwork-app/4chan.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/4chan.js">[SOURCE]</a><br><br>
-          <p> Apps by <a href="https://github.com/L413"><b>L413</b></a></p>
-          <b style="color: #00ff00;">Bitplanes</b> - <a class="consolea" href="javascript:installApp('https://l413.github.io/Clockwork-OS-Custom/bitplanesapp.js');">[INSTALL]</a> - <a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/bitplanesapp.js">[SOURCE]</a><br>
-          <b style="color: #1DA1F2;">Tiny Fishing</b> - <a class="consolea" href="javascript:installApp('https://l413.github.io/Clockwork-OS-Custom/tinyfishingapp.js');">[INSTALL]</a> - <a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/tinyfishingapp.js">[SOURCE]</a><br>
-          <b style="color: #FFA500;">2048</b> - <a class="consolea" href="javascript:installApp('https://l413.github.io/Clockwork-OS-Custom/2048app.js');">[INSTALL]</a> - <a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/2048app.js">[SOURCE]</a><br>
-          <b style="color: #FdA500;">Basket Random</b> - <a class="consolea" href="javascript:installApp('https://l413.github.io/Clockwork-OS-Custom/basketrandomapp.js');">[INSTALL]</a> - <a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/basketrandomapp.js">[SOURCE]</a><br>
-          <b style="color: #FFA560;">PaperIO 2</b> - <a class="consolea" href="javascript:installApp('https://l413.github.io/Clockwork-OS-Custom/paperio2app.js');">[INSTALL]</a> - <a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/paperio2app.js">[SOURCE]</a><br>
-          <b style="color: #FF3500;">Mandalin Stunt Cars</b> - <a class="consolea" href="javascript:installApp('https://l413.github.io/Clockwork-OS-Custom/mandalinapp.js');">[INSTALL]</a> - <a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/mandalinapp.js">[SOURCE]</a><br>
-          <b style="color: #FaFa35;">Pokemon Launcher</b> - <a class="consolea" href="javascript:installApp('https://l413.github.io/Clockwork-OS-Custom/pokemonapp.js');">[INSTALL]</a> - <a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/pokemonapp.js">[SOURCE]</a><br>
-          <b style="color: #FBA560;">Celeste</b> - <a class="consolea" href="javascript:installApp('https://l413.github.io/Clockwork-OS-Custom/celesteapp.js');">[INSTALL]</a> - <a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/celesteapp.js">[SOURCE]</a><br>
-          <b style="color: #718ACB;">Bitlife</b> - <a class="consolea" href="javascript:installApp('https://l413.github.io/Clockwork-OS-Custom/bitlifeapp.js');">[INSTALL]</a> - <a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/bitlifeapp.js">[SOURCE]</a><br>
-          <b style="color: #808080;">Grey Box Testing</b> - <a class="consolea" href="javascript:installApp('https://l413.github.io/Clockwork-OS-Custom/greyboxtestingapp.js');">[INSTALL]</a> - <a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/greyboxtestingapp.js">[SOURCE]</a><br>
-          <b style="color: #bad980;">Eaglercraft</b> - <a class="consolea" href="javascript:installApp('https://l413.github.io/Clockwork-OS-Custom/eaglerapp.js');">[INSTALL]</a> - <a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/eaglerapp.js">[SOURCE]</a><br>
-          <b style="color: #fdfd99;">1v1.lol</b> - <a class="consolea" href="javascript:installApp('https://l413.github.io/Clockwork-OS-Custom/1v1lolapp.js');">[INSTALL]</a> - <a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/1v1lolapp.js">[SOURCE]</a><br>
-          <br>
-          <a class="consolea" href="javascript:installApp(null);">[INSTALL CUSTOM SCRIPT]</a><br>
-        </div>
-        <div class="confont" style="display:inline;width:50%;float:left;">
-          <b>THEME STORE</b><br><br>
-          You can only have one theme installed at a time.<br>
-          <br>
-          <br>
-          <b style="color: white;">Monospace</b> - <a class="consolea" href="javascript:addTheme('https://redstone-nw.netlify.app/clockwork-app/codestyle.css');">[INSTALL]</a><br>
-          <b style="color: blue;">Windows Knockoff</b> - <a class="consolea" href="javascript:addTheme('https://redstone-nw.netlify.app/clockwork-app/windowstyle.css');">[INSTALL]</a><br>
-          <b style="color: purple;">Soft Purple by <a style="color: purple;" href="https://github.com/L413">L413</a></b> - <a class="consolea" href="javascript:addTheme('https://l413.github.io/Clockwork-OS-Custom/softpurpletheme.css');">[INSTALL]</a><br>
-          <br>
-          <br>
-          <a class="consolea" href="javascript:addTheme(null);">[INSTALL CUSTOM THEME]</a><br>
-          <a class="consolea" href="javascript:addTheme('clockstyle.css');">[RESET TO DEFAULT]</a><br>
-        </div>
-      </div>
-
-      <div style="display: none;" id="appstoreinstalling">
-        <span class="confont">
-          <b id="installinglooper">INSTALLING...</b>
-        </span>
-      </div>
+      <iframe style="display: none;" class="app" id="appstore" src="about:blank"></iframe>
 
       <div style="display: none;" id="games">
         <span class="confont">
@@ -223,12 +99,13 @@
       <div style="display: none;" id="settings-about">
         <span class="confont">
           <b>ABOUT CLOCKWORK - <a class="consolea" href="javascript:openapp('settings','');">BACK</a></span></b><br>        
-          Version 0.15.0<br>
+          Version beta-0.16.0<br>
+          If you're not a developer you really shouldn't be here.<br>
           <a class="consolea" href="https://github.com/red-stone-network/clockwork/">Github Repository</a> - <a class="consolea" href="https://redstone-nw.netlify.app/index.html">Redstone Network</a>
         </span>
       </div>
     </div>
     
-    <script src="clockwork.js"></script>
+    <script src="https://redstone-dev-site-buttche-eks.netlify.app/clockwork-app/clockwork.js"></script>
   </body>
 </html>

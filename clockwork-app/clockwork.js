@@ -69,7 +69,7 @@ function openapp(appname, appurl) {
 
     appname.style = "display: block;";
   } else {
-    alert("// ERROR \nApp of name does not exist");
+    console.log("// ERROR \nApp of name does not exist");
   }
 }
 
@@ -82,7 +82,7 @@ function closeApp(appname) {
 
     appname.style = "display: none;";
   } else {
-    alert("// ERROR \nApp of name does not exist");
+    console.log("// ERROR \nApp of name does not exist");
   }
 }
 //https://sub64.netlify.app/clockwork-beta/clock2.css
