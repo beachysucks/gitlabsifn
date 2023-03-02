@@ -22,13 +22,14 @@ function scrollbarVisible(element) {
 function uninstallApp(unid) {
   var apps = JSON.parse(localStorage.getItem("apps"));
   if (confirm("Are you sure you want to delete this app? You'll lose all your saved data!") == true) {
-    var filtered = apps.filter(function(value, index, arr){ 
-      return value != unid;
-    });
-    alert(filtered);
-    localStorage.setItem("apps", JSON.stringify(filtered));
-    var apps = filtered;
-    
+    for (var i = apps.length - 1; i >= 0; --i) {
+      if (apps[i] == unid) {
+        apps.splice(i,1);
+        break;
+      }
+    }
+    alert(apps);
+    localStorage.setItem("apps", JSON.stringify(apps));
 
     var paras = document.getElementsByClassName(unid);
     while(paras[0]) {
