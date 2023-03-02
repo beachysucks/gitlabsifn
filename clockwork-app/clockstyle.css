@@ -6,7 +6,7 @@ html {
 
 body {
   margin: 0;
-  background-color: black;
+  background-color: black !important;
   color: whitesmoke;
   font-family: Roboto, Arial, sans-serif;
 }
