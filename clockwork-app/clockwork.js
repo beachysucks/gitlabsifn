@@ -28,7 +28,6 @@ function uninstallApp(unid) {
         break;
       }
     }
-    alert(apps);
     localStorage.setItem("apps", JSON.stringify(apps));
 
     var paras = document.getElementsByClassName(unid);
