@@ -35,6 +35,7 @@ function uninstallApp(unid) {
     while(paras[0]) {
       paras[0].parentNode.removeChild(paras[0]);
     }
+    alert("App uninstalled. You may need to restart Clockwork to finish uninstalling.")
   }
   apps = JSON.parse(localStorage.getItem("apps"));
   console.log(apps);
