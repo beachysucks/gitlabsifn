@@ -25,8 +25,10 @@ function uninstallApp(unid) {
     var filtered = apps.filter(function(value, index, arr){ 
       return value != unid;
     });
+    alert(filtered);
     localStorage.setItem("apps", JSON.stringify(filtered));
     var apps = filtered;
+    
 
     var paras = document.getElementsByClassName(unid);
     while(paras[0]) {
