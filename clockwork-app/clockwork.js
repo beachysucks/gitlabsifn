@@ -22,16 +22,19 @@ function scrollbarVisible(element) {
 function uninstallApp(unid) {
   var apps = JSON.parse(localStorage.getItem("apps"));
   if (confirm("Are you sure you want to delete this app? You'll lose all your saved data!") == true) {
-    var filtered = apps.filter(function(value, index, arr){ 
-      return value != unid;
-    });
-    localStorage.setItem("apps", JSON.stringify(filtered));
-    var apps = filtered;
+    for (var i = apps.length - 1; i >= 0; --i) {
+      if (apps[i] == unid) {
+        apps.splice(i,1);
+        break;
+      }
+    }
+    localStorage.setItem("apps", JSON.stringify(apps));
 
     var paras = document.getElementsByClassName(unid);
     while(paras[0]) {
       paras[0].parentNode.removeChild(paras[0]);
     }
+    alert("App uninstalled. You may need to restart Clockwork to finish uninstalling.")
   }
   apps = JSON.parse(localStorage.getItem("apps"));
   console.log(apps);
@@ -69,7 +72,7 @@ function openapp(appname, appurl) {
 
     appname.style = "display: block;";
   } else {
-    alert("// ERROR \nApp of name does not exist");
+    console.log("// ERROR \nApp of name does not exist");
   }
 }
 
@@ -82,7 +85,7 @@ function closeApp(appname) {
 
     appname.style = "display: none;";
   } else {
-    alert("// ERROR \nApp of name does not exist");
+    console.log("// ERROR \nApp of name does not exist");
   }
 }
 //https://sub64.netlify.app/clockwork-beta/clock2.css
@@ -98,6 +101,30 @@ function addApp(scr) {
   document.getElementById("applist").appendChild(aelem);
 }
 
+function installAppV2(source, script) {
+  var conf;
+  if (source.includes("clockwork-app-store.glitch.me") == false) {
+     conf = confirm(`//// READ THIS MESSAGE!!!! ////
+An untrusted app is trying to install a script to Clockwork. Apps can easily install malicious scripts if you aren't careful.
+
+APP URL: `+script+`
+
+Are you ABSOULTELY SURE you want to continue with installation?`);
+  } else {
+    conf = confirm(`Are you sure you want to install this app?`);
+  }
+  if (conf == true) {
+    if (apps.includes(script) == true) {
+      alert("App is already installed!");
+    } else {
+      apps.push(script);
+      addApp(script);
+      localStorage.setItem("apps", JSON.stringify(apps));
+      console.log(apps);
+    }
+  }
+}
+
 function installApp(appscript) {
   openapp('appstoreinstalling','mongus');
   if (appscript == null) {
@@ -106,10 +133,10 @@ function installApp(appscript) {
   if (apps.includes(appscript) == true) {
     alert("App is already installed!");
   } else {
-    apps.push(appscript);
-    addApp(appscript);
-    localStorage.setItem("apps", JSON.stringify(apps));
-    console.log(apps);
+    console.warn("installApp() is deprecated! We've made it so it doesn't install apps forever for security reasons.\nPlease use installAppV2() instead")
+    if (confirm("This app is using outdated code - it may break at any time. Continue?") == true) {
+      addApp(appscript);
+    }
   }
   openapp('appstore','mongus');
 }
@@ -193,3 +220,11 @@ function hideMenu() {
   document.getElementById("contextMenu").style.display = "none";
 }
 document.onclick = hideMenu;
+
+window.addEventListener('message', function(event) {
+  if (event.data.length > 1) {
+    if (event.data[0] == "install app") { //data.origin
+      installAppV2(event.origin,event.data[1]);
+    }
+  }
+});
