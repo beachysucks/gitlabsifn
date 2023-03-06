@@ -1,5 +1,5 @@
 var theme = localStorage.getItem("theme");
-if (theme != null) {
+if (theme == null) {
   addTheme('https://redstone-nw.netlify.app/clockwork-app/clockstyle.css');
 }
 
