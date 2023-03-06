@@ -1,11 +1,8 @@
-if (localStorage.getItem("theme").length < 7) {
+if (localStorage.getItem("theme").length < 7 || localStorage.getItem("facReset") == "true") {
   localStorage.setItem("theme", "https://redstone-nw.netlify.app/clockwork-app/clockstyle.css")
-
+  localStorage.setItem("facReset", "false");
 }
 addTheme(localStorage.getItem("theme"));
-if (localStorage.getItem("facReset") == "true") {
-  addTheme('https://redstone-nw.netlify.app/clockwork-app/clockstyle.css');
-}
 
 apps = JSON.parse(localStorage.getItem("apps"));
 console.log(apps);
@@ -197,7 +194,7 @@ function unhide() {
 
 function factoryReset() {
   if (confirm("Are you ABSOLUTELY SURE you want to factory reset Clockwork?\nAll your themes and apps (and some data) will be gone!")) {
-    localStorage.setItem("apps",null);
+    localStorage.setItem("apps", "[]");
     localStorage.setItem("facReset", "true");
     addTheme('https://redstone-nw.netlify.app/clockwork-app/clockstyle.css');
     document.location.reload();
