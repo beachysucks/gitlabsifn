@@ -193,8 +193,8 @@ function unhide() {
 
 function factoryReset() {
   if (confirm("Are you ABSOLUTELY SURE you want to factory reset Clockwork?\nAll your themes and apps (and some data) will be gone!")) {
-    localStorage.removeItem("theme");
-    localStorage.removeItem("apps");
+    localStorage.setItem("apps",null);
+    addTheme('https://redstone-nw.netlify.app/clockwork-app/clockstyle.css');
     document.location.reload();
   }
 }
