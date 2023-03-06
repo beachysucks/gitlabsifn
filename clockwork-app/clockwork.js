@@ -1,4 +1,4 @@
-if (localStorage.getItem("theme") == null) {
+if (localStorage.getItem("theme").length < 7) {
   localStorage.setItem("theme", "https://redstone-nw.netlify.app/clockwork-app/clockstyle.css")
 
 }
