@@ -1,6 +1,8 @@
 if (localStorage.getItem("theme") == null) {
-  addTheme('https://redstone-nw.netlify.app/clockwork-app/clockstyle.css');
+  localStorage.setItem("theme", "https://redstone-nw.netlify.app/clockwork-app/clockstyle.css")
+
 }
+addTheme(localStorage.getItem("theme"));
 if (localStorage.getItem("facReset") == "true") {
   addTheme('https://redstone-nw.netlify.app/clockwork-app/clockstyle.css');
 }
