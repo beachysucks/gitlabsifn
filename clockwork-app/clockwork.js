@@ -104,7 +104,7 @@ function addApp(scr) {
 
 function installAppV2(source, script) {
   var conf;
-  if (source.includes("clockwork-app-store.glitch.me") == false) {
+  if (source.includes("clockwork-store.glitch.me") == false) {
      conf = confirm(`//// READ THIS MESSAGE!!!! ////
 An untrusted app is trying to install a script to Clockwork. Apps can easily install malicious scripts if you aren't careful.
 

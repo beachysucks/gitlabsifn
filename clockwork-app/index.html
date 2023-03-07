@@ -56,7 +56,8 @@
           If you want to learn how to get your own app working, there's a wiki for that too:<br>
           <a class="consolea" href="https://github.com/red-stone-network/clockwork/wiki/Dev-Tutorials">https://github.com/red-stone-network/clockwork/wiki/Dev-Tutorials</a>
           <br><br>
-          The latest update adds the new App Store! It's a work in progress, so it doesn't have all the features we want it to have, but it does have enough features to be a decent app store.
+          IF YOU'VE FACTORY RESET CLOCKWORK AND THE THEME BROKE, PLEASE TRY TO FACTORY RESET AGAIN!<br>
+          This update adds the classic app store - you can find it in the Settings.
         </span>
       </div>
       <iframe style="display: none;" class="app" id="notepad" src="about:blank"></iframe>
@@ -66,6 +67,37 @@
       <iframe style="display: none;" class="app" id="game" src="about:blank"></iframe>
       <embed style="display: none;" class="app" id="flashgame" src="about:blank"></embed>
       <iframe style="display: none;" class="app" id="appstore" src="about:blank"></iframe>
+
+      <div style="display: none;" id="classicappstore">
+        <div class="confont" style="display:inline;width:50%;float:left;">
+          <b>APP STORE</b><br><br>
+          <b style="color: #1DA1F2;">Twitter</b> - <a class="consolea" href="javascript:installAppV2('clockwork-app-store.glitch.me','https://redstone-nw.netlify.app/clockwork-app/twitter.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/twitter.js">[SOURCE]</a><br>
+          <b style="color: #738ADB;">Discord</b> - <a class="consolea" href="javascript:installAppV2('clockwork-app-store.glitch.me', 'https://redstone-nw.netlify.app/clockwork-app/discord.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/discord.js">[SOURCE]</a><br>
+          <b style="color: white;">Shadow Proxy</b> - <a class="consolea" href="javascript:installAppV2('clockwork-app-store.glitch.me', 'https://redstone-nw.netlify.app/clockwork-app/shadow.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/shadow.js">[SOURCE]</a><br>
+          <b>RetroArch</b> - <a class="consolea" href="javascript:installAppV2('clockwork-app-store.glitch.me', 'https://redstone-nw.netlify.app/clockwork-app/retroarch.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/retroarch.js">[SOURCE]</a><br>
+          <b style="color: red;">Notepad</b> - <a class="consolea" href="javascript:installAppV2('clockwork-app-store.glitch.me', 'https://redstone-nw.netlify.app/clockwork-app/notepad.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/notepad.js">[SOURCE]</a><br>
+          <b style="color: #800;">4chan</b> - <a class="consolea" href="javascript:installAppV2('clockwork-app-store.glitch.me', 'https://redstone-nw.netlify.app/clockwork-app/4chan.js');">[INSTALL]</a> - <a class="consolea" href="https://redstone-nw.netlify.app/clockwork-app/4chan.js">[SOURCE]</a><br>
+          <b style="color: #00ff00;">Bitplanes by <a style="color: #00ff00;" href="https://github.com/L413">L413</a></b> - <a class="consolea" href="javascript:installAppV2('clockwork-app-store.glitch.me', 'https://l413.github.io/Clockwork-OS-Custom/bitplanesapp.js');">[INSTALL]</a> - <a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/bitplanesapp.js">[SOURCE]</a><br>
+          <b style="color: #1DA1F2;">Tiny Fishing by <a style="color: #1DA1F2;" href="https://github.com/L413">L413</a></b> - <a class="consolea" href="javascript:installAppV2('clockwork-app-store.glitch.me', 'https://l413.github.io/Clockwork-OS-Custom/tinyfishingapp.js');">[INSTALL]</a> - <a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/tinyfishingapp.js">[SOURCE]</a><br>
+          <b style="color: #FFA500;">2048 by <a style="color: #FFA500;" href="https://github.com/L413">L413</a></b> - <a class="consolea" href="javascript:installAppV2('clockwork-app-store.glitch.me', 'https://l413.github.io/Clockwork-OS-Custom/2048app.js');">[INSTALL]</a> - <a class="consolea" href="https://l413.github.io/Clockwork-OS-Custom/2048app.js">[SOURCE]</a><br>
+          <br>
+          <a class="consolea" href="javascript:installApp(null);">[INSTALL CUSTOM SCRIPT]</a><br>
+        </div>
+        <div class="confont" style="display:inline;width:50%;float:left;">
+          <b>THEME STORE</b><br><br>
+          You can only have one theme installed at a time.<br>
+          <br>
+          <br>
+          <b style="color: white;">Monospace</b> - <a class="consolea" href="javascript:addTheme('https://redstone-nw.netlify.app/clockwork-app/codestyle.css');">[INSTALL]</a><br>
+          <b style="color: blue;">Windows Knockoff</b> - <a class="consolea" href="javascript:addTheme('https://redstone-nw.netlify.app/clockwork-app/windowstyle.css');">[INSTALL]</a><br>
+          <b style="color: purple;">Soft Purple by <a style="color: purple;" href="https://github.com/L413">L413</a></b> - <a class="consolea" href="javascript:addTheme('https://l413.github.io/Clockwork-OS-Custom/softpurpletheme.css');">[INSTALL]</a><br>
+          <br>
+          <br>
+          <a class="consolea" href="javascript:addTheme(null);">[INSTALL CUSTOM THEME]</a><br>
+          <a class="consolea" href="javascript:addTheme('clockstyle.css');">[RESET TO DEFAULT]</a><br>
+        </div>
+      </div>
+
 
       <div style="display: none;" class="app" id="games">
         <span class="confont">
@@ -93,7 +125,7 @@
         <span class="confont">
           <b>SETTINGS</b><br>
           <a class="consolea" href="javascript:openapp('settings-apps','');">Manage Apps</a><br>
-          <a class="consolea" href="javascript:addTheme(null);">Install Theme by URL</a><br>
+          <a class="consolea" href="javascript:openapp('classicappstore','mongus');">Classic App Store</a><br>
           <a class="consolea" href="javascript:openapp('settings-about','');">About Clockwork</a><br>
           <a class="consolea" href="javascript:factoryReset();">Factory Reset</a><br>
         </span>
@@ -102,7 +134,7 @@
       <div style="display: none;" class="app" id="settings-about">
         <span class="confont">
           <b>ABOUT CLOCKWORK - <a class="consolea" href="javascript:openapp('settings','');">BACK</a></span></b><br>        
-          Version 0.16.1<br><br>
+          Version 0.16.2<br><br>
           <a class="consolea" href="https://github.com/red-stone-network/clockwork/">Github Repository</a> - <a class="consolea" href="https://redstone-nw.netlify.app/index.html">Redstone Network</a>
         </span>
       </div>
