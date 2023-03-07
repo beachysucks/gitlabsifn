@@ -228,6 +228,9 @@ window.addEventListener('message', function(event) {
     if (event.data[0] == "install app") { //data.origin
       installAppV2(event.origin,event.data[1]);
     }
+    if (event.data[0] == "install theme") { //data.origin
+      addTheme(event.data[1]);
+    }
   }
 });
 
