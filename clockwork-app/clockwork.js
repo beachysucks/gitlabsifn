@@ -230,3 +230,8 @@ window.addEventListener('message', function(event) {
     }
   }
 });
+
+window.addEventListener('beforeunload', function (e) {
+  e.preventDefault();
+  e.returnValue = '';
+});
