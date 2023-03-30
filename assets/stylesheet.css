@@ -58,3 +58,27 @@ p {
 a {
   color: red;
 }
+.iconlink {
+  width: 100px;
+  font-size: 20px;
+  border: 2px #fff solid;
+  display: inline-block;
+  padding: 5px;
+  border-radius: 8px;
+  color: white;
+  transition: 0.3s;
+}
+.iconlink:hover {
+  background-color: red;
+  border: 2px red solid;
+  color: black;
+}
+.iconlink > img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  transition: 0.3s;
+}
+.iconlink:hover > img {
+  filter: invert(100%);
+}
