@@ -28,7 +28,7 @@ text-align: center;
   animation: fadein 2s;
   padding: 0vh 0;
   position: relative;
-  top: calc(50vh - 5vw);
+  top: calc(50vh - 3vw);
 }
 #bigbox {
   width: 100%;
@@ -46,7 +46,7 @@ text-align: center;
   text-align: center;
   vertical-align: center;
   color: #f00;
-  font-size: 10vw;
+  font-size: 6vw;
   margin: 0px auto 0;
   font-weight: 1000;
   height: 100vh;
