@@ -1,2 +1,2 @@
-https://redstone-dev-site-buttche-eks.netlify.app/
+https://redstone-nw.netlify.app/
 VIEW THIS BITCH IN DEPLOYMENT HERE
