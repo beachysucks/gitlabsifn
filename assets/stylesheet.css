@@ -7,6 +7,7 @@ color: white;
   padding: 0 0;
 margin: 0;
 font-family: Rubik, Roboto, Arial, sans-serif;
+text-align: center;
 }
 
 @keyframes fadein { 
@@ -24,7 +25,7 @@ font-family: Rubik, Roboto, Arial, sans-serif;
   padding: 10vh 0;
 }
 #biggertext {
-  animation: fadein 1s;
+  animation: fadein 2s;
   padding: 0vh 0;
   position: relative;
   top: calc(50vh - 5vw);
