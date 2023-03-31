@@ -445,5 +445,5 @@ www\.hdteen\.porn
 |pornhub
 |porn
 |hitler
-|[nNz][\s|-]*[iI1l|*#][\s]*[gGqc][\s|-]*([gGqc]+[\s|-]*[eE3*#]*[\s|-]*[rR]+){0,1}
+|[nNz][\s|-]*[iI1l|*#][\s]*([gGqc][\s|-]*[gGqc]+[\s|-]*[eE3*#]*[\s|-]*[rR]+|[gGq][\s|-]*)
 |[fF][\s|-]*[aA4*#][\s|-]*[gGq][\s|-]*([gGq]+[\s|-]*[oO0*#]*[\s|-]*[tT]+){0,1}
