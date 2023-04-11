@@ -1,1 +1,147 @@
-function _0xe2f2(_0x216273,_0x25cf01){const _0x38b905=_0x38b9();return _0xe2f2=function(_0xe2f227,_0x307651){_0xe2f227=_0xe2f227-0x113;let _0x4a6f5a=_0x38b905[_0xe2f227];return _0x4a6f5a;},_0xe2f2(_0x216273,_0x25cf01);}const _0xe2e185=_0xe2f2;(function(_0x1b9923,_0x4600a8){const _0x351936=_0xe2f2,_0x1d2a01=_0x1b9923();while(!![]){try{const _0x4ecd95=parseInt(_0x351936(0x118))/0x1*(parseInt(_0x351936(0x11a))/0x2)+parseInt(_0x351936(0x131))/0x3*(-parseInt(_0x351936(0x11d))/0x4)+parseInt(_0x351936(0x137))/0x5*(parseInt(_0x351936(0x138))/0x6)+-parseInt(_0x351936(0x119))/0x7*(parseInt(_0x351936(0x127))/0x8)+-parseInt(_0x351936(0x128))/0x9*(parseInt(_0x351936(0x113))/0xa)+-parseInt(_0x351936(0x125))/0xb*(-parseInt(_0x351936(0x11b))/0xc)+-parseInt(_0x351936(0x116))/0xd*(parseInt(_0x351936(0x133))/0xe);if(_0x4ecd95===_0x4600a8)break;else _0x1d2a01['push'](_0x1d2a01['shift']());}catch(_0xe68835){_0x1d2a01['push'](_0x1d2a01['shift']());}}}(_0x38b9,0xa4976));function _0x38b9(){const _0x1844d9=['split','1268768SNinbe','9GdmqEW','ILOVEBANABA','CANTREADMENOWBITCH','NUBMER','length','log','NOWIN4K','random','LUKASEXISTS','158847lTSPAL','(V1.0.0)','70XjXzFm','IDONTGETPAIDENOUGH4DIS','UWUOWO:3TWT','NOWWITHHDMI2.1','5800975XgfqgE','6VHdCjx','THEENCODINGDUDE','1916110rDcTsG','LISTOFPREFIXSTUFF','THISISTOTALLYBASE64','2044003WXqzQH','SYNTAXERROR:XISNOTAFUNCTION','1tPwRXb','21zqaKVg','1017398KgNMaG','79572kXlZFY','WHENTHEIMPOSTERISSUS','52WzmJhL','MINECRAFT','THEFITNESSGRAMPACERTESTISA...','IHAVEEATEN10POUNDSOFC4','FORTNITEBATTLEPASS','REMOVEDHEROBRINE','--\x20CLOCKWORK\x20--\x0a\x20enc-dec.js\x20loaded!','WORDREH','1903zYKRoM'];_0x38b9=function(){return _0x1844d9;};return _0x38b9();}const encodeListCW={'l01':'a','l02':'b','l03':'c','l04':'d','l05':'e','l06':'f','l07':'g','l08':'h','l09':'i','l10':'j','l11':'k','l12':'l','l13':'m','l14':'n','l15':'o','l16':'p','l17':'q','l18':'r','l19':'s','l20':'t','l21':'u','l22':'v','l23':'w','l24':'x','l25':'y','l26':'z','u01':'A','u02':'B','u03':'C','u04':'D','u05':'E','u06':'F','u07':'G','u08':'H','u09':'I','u10':'J','u11':'K','u12':'L','u13':'M','u14':'N','u15':'O','u16':'P','u17':'Q','u18':'R','u19':'S','u20':'T','u21':'U','u22':'V','u23':'W','u24':'X','u25':'Y','u26':'Z','num00':'0','num01':'1','num02':'2','num03':'3','num04':'4','num05':'5','num06':'6','num07':'7','num08':'8','num09':'9','w01':'\x20','bs01':'!','bs02':'@','bs03':'#','bs04':'$','bs05':'%','bs06':'^','bs07':'&','bs08':'*','bs09':'(','bs10':')','bs11':'<','bs12':'>','bs13':'.','bs14':',','bs15':'?','bs16':'-','bs17':'_','bs18':'=','bs19':'+','bs20':'`','bs21':'~','bs22':':','bs23':';','bs24':'\x27','bs25':'\x22','bs26':'\x5c','bs27':'|'},listOfPrefixStuff=[_0xe2e185(0x12a),_0xe2e185(0x12e),_0xe2e185(0x11f),_0xe2e185(0x139),_0xe2e185(0x115),_0xe2e185(0x12b),_0xe2e185(0x117),_0xe2e185(0x11c),_0xe2e185(0x134),_0xe2e185(0x121),_0xe2e185(0x135),_0xe2e185(0x130),_0xe2e185(0x11e),_0xe2e185(0x129),_0xe2e185(0x114),_0xe2e185(0x136),_0xe2e185(0x120),_0xe2e185(0x122),'LETOUTPUT=\x22\x22FOR(LETSTEP=0;',_0xe2e185(0x124),'RAGGYRUTTHEFUCKUPYOUDUMBRITHEAD'];function encodeCW(_0x6e0b69){const _0x3d3a4d=_0xe2e185;let _0x3b7035=listOfPrefixStuff[Math['floor'](Math[_0x3d3a4d(0x12f)]()*listOfPrefixStuff[_0x3d3a4d(0x12c)])]+_0x3d3a4d(0x132);for(let _0x4a18e4=0x0;_0x4a18e4<_0x6e0b69[_0x3d3a4d(0x12c)];_0x4a18e4++){for(const _0x3665b7 in encodeListCW){encodeListCW[_0x3665b7]==_0x6e0b69[_0x4a18e4]&&(_0x3b7035+='#'+_0x3665b7);}}return _0x3b7035;}function decodeCW(_0x4ee2b5){const _0x1b2623=_0xe2e185;let _0x310465=_0x4ee2b5[_0x1b2623(0x126)]('#'),_0x510b6b='';for(let _0xf82988=0x1;_0xf82988<_0x310465[_0x1b2623(0x12c)];_0xf82988++){for(const _0x38b6d8 in encodeListCW){_0x38b6d8==_0x310465[_0xf82988]&&(_0x510b6b+=encodeListCW[_0x310465[_0xf82988]]);}}return _0x510b6b;}console[_0xe2e185(0x12d)](_0xe2e185(0x123));
+const encodeListCW = {
+  // LOWERCASE //
+  "l01": "a",
+  "l02": "b",
+  "l03": "c",
+  "l04": "d",
+  "l05": "e",
+  "l06": "f",
+  "l07": "g",
+  "l08": "h",
+  "l09": "i",
+  "l10": "j",
+  "l11": "k",
+  "l12": "l",
+  "l13": "m",
+  "l14": "n",
+  "l15": "o",
+  "l16": "p",
+  "l17": "q",
+  "l18": "r",
+  "l19": "s",
+  "l20": "t",
+  "l21": "u",
+  "l22": "v",
+  "l23": "w",
+  "l24": "x",
+  "l25": "y",
+  "l26": "z",
+  
+  // UPPERCASE //
+  "u01": "A",
+  "u02": "B",
+  "u03": "C",
+  "u04": "D",
+  "u05": "E",
+  "u06": "F",
+  "u07": "G",
+  "u08": "H",
+  "u09": "I",
+  "u10": "J",
+  "u11": "K",
+  "u12": "L",
+  "u13": "M",
+  "u14": "N",
+  "u15": "O",
+  "u16": "P",
+  "u17": "Q",
+  "u18": "R",
+  "u19": "S",
+  "u20": "T",
+  "u21": "U",
+  "u22": "V",
+  "u23": "W",
+  "u24": "X",
+  "u25": "Y",
+  "u26": "Z",
+  
+  // NUMERAL SYMBOLS //
+  "num00": "0",
+  "num01": "1",
+  "num02": "2",
+  "num03": "3",
+  "num04": "4",
+  "num05": "5",
+  "num06": "6",
+  "num07": "7",
+  "num08": "8",
+  "num09": "9",
+  "w01": " ",
+  
+  // BASIC SYMBOLS //
+  "bs01": "!",
+  "bs02": "@",
+  "bs03": "#",
+  "bs04": "$",
+  "bs05": "%",
+  "bs06": "^",
+  "bs07": "&",
+  "bs08": "*",
+  "bs09": "(",
+  "bs10": ")",
+  "bs11": "<",
+  "bs12": ">",
+  "bs13": ".",
+  "bs14": ",",
+  "bs15": "?",
+  "bs16": "-",
+  "bs17": "_",
+  "bs18": "=",
+  "bs19": "+",
+  "bs20": "`",
+  "bs21": "~",
+  "bs22": ":",
+  "bs23": ";",
+  "bs24": "'",
+  "bs25": "\"",
+  "bs26": "\\",
+  "bs27": "|",
+  "bs28": "/",
+};
+const listOfPrefixStuff = [
+  "CANTREADMENOWBITCH",
+  "NOWIN4K",
+  "THEFITNESSGRAMPACERTESTISA...",
+  "THEENCODINGDUDE",
+  "THISISTOTALLYBASE64",
+  "NUBMER",
+  "SYNTAXERROR:XISNOTAFUNCTION",
+  "WHENTHEIMPOSTERISSUS",
+  "IDONTGETPAIDENOUGH4DIS",
+  "FORTNITEBATTLEPASS",
+  "UWUOWO:3TWT",
+  "LUKASEXISTS",
+  "MINECRAFT",
+  "ILOVEBANABA",
+  "LISTOFPREFIXSTUFF",
+  "NOWWITHHDMI2.1",
+  "IHAVEEATEN10POUNDSOFC4",
+  "REMOVEDHEROBRINE",
+  "LETOUTPUT=\"\"FOR(LETSTEP=0;",
+  "WORDREH",
+  "RAGGYRUTTHEFUCKUPYOUDUMBRITHEAD",
+]
+function encodeCW(input) {
+  let output = listOfPrefixStuff[Math.floor(Math.random()*listOfPrefixStuff.length)]+"(V1.0.0)";
+  for (let step = 0; step < input.length; step++) {
+    for (const key in encodeListCW) {
+      if (encodeListCW[key] == input[step]) {
+    	  output += "#"+key;
+      }
+    }	
+  }
+  return output;
+}
+function decodeCW(input) {
+  let toDecode = input.split("#");
+  let output = "";
+  for (let step = 1; step < toDecode.length; step++) {
+    for (const key in encodeListCW) {
+      if (key == toDecode[step]) {
+    	  output += encodeListCW[toDecode[step]];
+      }
+    }	
+  }
+  return output;
+}
+console.log("-- CLOCKWORK --\n enc-dec.js loaded!")
