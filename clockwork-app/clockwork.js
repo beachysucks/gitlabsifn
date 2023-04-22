@@ -10,12 +10,10 @@ if (localStorage.getItem("theme").length < 7 || localStorage.getItem("facReset")
 addTheme(localStorage.getItem("theme"));
 
 apps = JSON.parse(localStorage.getItem("apps"));
-console.log(apps);
 if (apps == null) {
   localStorage.setItem("apps", JSON.stringify(new Array()));
   var apps = new Array();
 }
-console.log(apps);
 var arrayLength = apps.length;
 for (var i = 0; i < arrayLength; i++) {
   addApp(apps[i]);
