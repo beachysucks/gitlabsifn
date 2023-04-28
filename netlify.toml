@@ -1,0 +1,5 @@
+[redirects]
+  from = "https://redstone-nw.netlify.app/*"
+  to = "https://redstone-netwrk.vercel.app/:splat"
+  status = 301
+  force = true
