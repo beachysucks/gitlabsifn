@@ -1,3 +1,5 @@
+/!! This is the official Muenster regex filter. Made to filter out slurs and nsfw content. !!/
+
 /!! Slurs !!/
 
 [nz]+[ .\-_\/\\+=]*[aeiou14]+[ .\-_\/\\+=]*([gqp6][ .\-_\/\\+=]*){1,2}(($|[ ])|[a4z])
