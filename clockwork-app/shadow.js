@@ -3,7 +3,7 @@ function start() {
   ////CONFIG////
 
   var link = "https://spiritual-excited-bangle.glitch.me/fortnitebattlepass.html"; // link to app webpage
-  var title = "Shadow"; // title shown in navbar
+  var title = "Shadow (broken)"; // title shown in navbar
   var id = "https://redstone-nw.netlify.app/clockwork-app/shadow.js"; // set this to the url location of your script
   
   ////SCRIPT////
