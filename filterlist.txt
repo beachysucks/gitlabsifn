@@ -12,6 +12,8 @@
 /!! NSFW content !!/
 
 |e621
+|r {0,1}(34|63)
+|rule {0,1}(34|63)
 |xtube\.rocks
 |melayustim-3gp\.blogspot\.com
 |sextubesvideos\.co
